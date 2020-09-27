@@ -29,3 +29,6 @@ plot :: (Int -> Int) -> Int -> Int -> [(Int, Int)]
 plot f a b = [(x,y) | x <- [a..b], y <- (map f [a..b]), y == (f x)]
 -- gives the graphical coordinates defining the function f 
 
+pythagorean_traids :: Int -> [(Int, Int, Int)]
+pythagorean_traids a = [ (x,y,z) | x <- [1..a], y <- [x..a], z <- [y..a], x ^ 2 + y ^ 2 == z ^ 2]
+-- gives the pythagorean triads upto the given number
