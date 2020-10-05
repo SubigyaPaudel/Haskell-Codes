@@ -1,3 +1,5 @@
+module List_comprehension where
+
 oddnum:: Int -> Int -> [Int]
 oddnum a b = [x | x <- [a..b], x `mod` 2 == 1]
 -- gives the odd numbers from a to b
